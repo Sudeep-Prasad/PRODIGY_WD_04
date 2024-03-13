@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudeep Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1126d45463.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certificate">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+            <p>UNDER GRADUATE STUDENT</p>
+            <h1>Hi,am <span>Sudeep </span><br> a passionate Web Developer from Bangalore,India</h1>
+        </div>
+        </div>
+    </div>
+    <!--------------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello all,I'am Sudeep who is pursuing under graduate degree in New Horizon College.
+                        <br>I live in bangalore ,my passion is to be a web developer and love to learn about 
+                    various technologies,this is just a small portfolio where i try to tell about me and my intrests :)  </p>
+                    <div class="tab_titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tabs " id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development.</li>
+                            <li><span>App Development</span><br>Android Studio.</li>
+                            <li><span>Devops</span><br>Development and Operation.</li>
+                        </ul>
+                    </div>
+                   
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Mini project(python)</span><br>Developed a snake game.</li>
+                            <li><span>Mini project</span><br>Developed Tic-Tac-Toe game.</li>
+                            <li><span>2023-2024</span><br>Class Representative.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>Bachelor in Computer Application.</li>
+                            <li><span>2019-2021</span><br>Pre-University College (PCMC).</li>
+                            <li><span>2018-2019</span><br>Grade 10(SSLC).</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------certificates---------------------------------------------------->
+   <div id="certificate">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="certificate-list">
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Android Development</h2>
+                <p>This is a certificate on completing a course in Android App Development
+                    where i tried to develop few android applications and had hands-on-experience.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Devops</h2>
+                <p>This is a certificate on completing a course in Developement and operation 
+                    where i hand hands on experience in developing and testing web applications 
+                    using various tools like jenkins and jira.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>i
+                <h2>CCNA</h2>
+                <p>This is a certificate on completing a course in Computer Communication and Network Application
+                    where i gained knowledge about the networks and communication servies.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>IOT</h2>
+                <p>This is a certificate on completing a course in Internet of Things where i learnt 
+                    about many sensors used for senoring and worked in Ardunio IDE to program those sensors.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2>Software Testing</h2>
+                <p>This is a certificate on completing a course in how to test the software 
+                    this is one of the part in SDLC life cycle where the developers develop the applicationsand test it befor 
+                    it is getting deployed and i learnt various testing like manual and automatic in this course.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+   </div>
+   
+   <!-----------------------------------------------------Portfolio-------------------------------------------------------------------------------->
+   
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>This is a single player snake game developed by me using python 
+                        language ,you can check it out in my git hub account for the source code of this game.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Tic-Tac-Toe Game</h3>
+                    <p>This is a two player game developed by me using python
+                        language,you can visit my github account to see this game and its
+                        source code. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>This is a weather forcasting app ,in this you can search for any country,state or districts
+                        weather temperature and this is updated in my git hub account do check it out.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn">See More</a>
+
+    </div>
+
+   </div>
+<!--------------------------------contact----------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>sudeepprasad412@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i>6366014387</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Sudeep-Prasad"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/sudeep.prasad.982/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/Sudeep_Prasad?t=NaFw2Tt4PTMywvg9GVjSFA&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download  class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="text" name="E-mail" placeholder="Enter your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message Please"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright  © Sudeep.</p>
+    </div>
+</div>
+
+
+
+
+   <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents ){
+                tabcontent.classList.remove("active-tabs");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tabs");
+
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzyca5CoPA-mvCxZMUQ-8BMujwpz7bgfY-AiDuZLMRQVHh6bUTCbbNjtfn0cBRNcWLTAw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!!!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
